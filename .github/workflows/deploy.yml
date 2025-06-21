@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Debug Secret Output (Do NOT use in real CI)
-  run: 
+  run: |
     echo "DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}"
     echo "DOCKER_TOKEN=${{ secrets.DOCKER_TOKEN }}" | wc -c
 
